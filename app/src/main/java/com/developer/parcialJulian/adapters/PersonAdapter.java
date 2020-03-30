@@ -20,6 +20,7 @@ public class PersonAdapter extends ArrayAdapter<Person> {
     }
 
 
+
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
 

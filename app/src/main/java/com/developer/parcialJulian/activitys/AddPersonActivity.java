@@ -14,8 +14,8 @@ import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.Toast;
 
-import com.developer.parcialandroid.R;
 import com.developer.parcialandroid.model.Person;
+import com.julian.parcialandroid.R;
 
 public class AddPersonActivity extends AppCompatActivity {
 
