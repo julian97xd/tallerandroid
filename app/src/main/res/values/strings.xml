@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">ParcialAndroid</string>
+    <string name="app_name">Parqueadero</string>
     <string-array name="group">
         <item>Familia</item>
         <item>Trabajo</item>

@@ -1,106 +1,153 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".activitys.AddPersonActivity"
-    android:orientation="vertical"
-    android:padding="16dp">
+    android:layout_height="wrap_content"
+    >
 
-    <LinearLayout
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        >
+        android:background="#f1f1f1"
+        android:padding="16dp">
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Nombre Contacto"
-            android:textSize="20sp"
-            android:textStyle="bold"
-            />
 
-        <EditText
-            android:id="@+id/edtName"
+        <LinearLayout
+            android:id="@+id/content"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:inputType="text"
-            android:hint="Type something here"/>
+            android:orientation="vertical"
+
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Añadir Auto"
+                android:fontFamily="sans-serif-black"
+                android:layout_gravity="center"
+                android:textSize="24sp"
+                android:textColor="@color/colorPrimary"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Placa"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/colorAccent"
+                android:layout_marginTop="30dp"
+                />
+
+            <EditText
+                android:id="@+id/edtPlaca"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:hint="Ingrese la placa"/>
 
 
-        <TextView
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Marca"
+                android:textSize="20sp"
+                android:textColor="@color/colorAccent"
+                android:layout_marginTop="35dp"
+                android:textStyle="bold"
+                />
+
+            <EditText
+                android:id="@+id/edtMarca"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:hint="Ingrese la marca"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Modelo"
+                android:textSize="20sp"
+                android:layout_gravity="center"
+                android:textColor="@color/colorAccent"
+                android:layout_marginTop="35dp"
+                android:textStyle="bold"
+                />
+
+            <NumberPicker
+                android:id="@+id/pickerAño"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="4dp"
+                android:paddingTop="4dp"
+                android:theme="@style/AppTheme.Picker"
+                android:layout_gravity="center"
+                />
+
+            <RadioGroup
+                android:id="@+id/opciones"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp">
+
+                <RadioButton
+                    android:id="@+id/automatico"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Automatico"
+                    android:checked="true"
+                    android:layout_marginEnd="10dp"/>
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Mecanico"
+                    android:layout_marginStart="10dp"/>
+
+            </RadioGroup>
+
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/btnSave"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Teléfono"
-            android:textSize="20sp"
+            android:layout_below="@id/content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
             android:layout_marginTop="20dp"
-            android:textStyle="bold"
-            />
+            android:layout_marginBottom="30dp"
+            android:background="@color/colorPrimary"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:text="Guardar"
+            android:textColor="#FFF"
+            android:textSize="16sp"
+            android:textStyle="bold" />
 
-        <EditText
-            android:id="@+id/edtPhone"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:inputType="phone"
-            android:hint="Type something here"/>
-
-        <TextView
+        <Button
+            android:id="@+id/btnCancel"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Grupo"
-            android:textSize="20sp"
-            android:layout_marginTop="20dp"
-            android:textStyle="bold"
-            />
+            android:layout_below="@+id/btnSave"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="10dp"
+            android:background="@color/colorPrimary"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:text="Volver"
+            android:textColor="#FFF"
+            android:textSize="16sp"
+            android:textStyle="bold" />
 
-        <Spinner
-            android:id="@+id/spinner"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:entries="@array/group"
-            android:paddingBottom="4dp"
-            android:paddingTop="4dp"
-            />
+    </RelativeLayout>
 
-
-    </LinearLayout>
-
-
-    <Button
-        android:id="@+id/btnSave"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Guardar"
-        android:textAllCaps="false"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentStart="true"
-        android:background="@color/colorPrimary"
-        android:textColor="#FFF"
-        android:paddingStart="16dp"
-        android:paddingEnd="16dp"
-        android:textStyle="bold"
-        android:textSize="16sp"
-        android:layout_marginStart="40dp"
-        android:layout_marginBottom="30dp"
-        />
-
-    <Button
-        android:id="@+id/btnCancel"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Cancelar"
-        android:textAllCaps="false"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentEnd="true"
-        android:background="@color/colorPrimary"
-        android:layout_marginRight="40dp"
-        android:layout_marginBottom="30dp"
-        android:textColor="#FFF"
-        android:paddingStart="16dp"
-        android:paddingEnd="16dp"
-        android:textStyle="bold"
-        android:textSize="16sp"
-        />
-</RelativeLayout>
+</androidx.core.widget.NestedScrollView>

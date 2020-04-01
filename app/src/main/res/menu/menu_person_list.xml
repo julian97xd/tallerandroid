@@ -8,28 +8,20 @@
 
         <menu>
         <item
-            android:id="@+id/orderName"
-            android:title="Ordenar por Nombre"
-            android:icon="@drawable/ic_share"
+            android:id="@+id/eliminar"
+            android:title="Eliminar un auto aleatorio"
             />
 
         <item
-            android:id="@+id/orderGroup"
-            android:title="Ordenar por Grupo"
-            android:icon="@drawable/ic_cloud"
+            android:id="@+id/mostrarMecanico"
+            android:title="Mostrar autos mecanicos"
             />
 
         <item
-            android:id="@+id/delete"
-            android:title="Eliminar todos"
-            android:icon="@drawable/ic_print_black_24dp"
+            android:id="@+id/mostrarAutomatico"
+            android:title="Mostrar autos automaticos"
             />
 
-        <item
-            android:id="@+id/change"
-            android:title="Invertir la lista"
-            android:icon="@drawable/ic_content"
-            />
     </menu>
     </item>
     </menu>

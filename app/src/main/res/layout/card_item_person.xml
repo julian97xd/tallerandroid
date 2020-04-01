@@ -4,33 +4,46 @@
     android:layout_height="wrap_content"
     xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
-    android:paddingTop="4dp"
-    android:background="?attr/selectableItemBackground"
-    android:paddingBottom="4dp">
+    android:paddingBottom="3dp"
+    android:paddingTop="2dp"
+   >
 
     <TextView
-        android:id="@+id/txtName"
+        android:id="@+id/txtPlaca"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        tools:text="Pedro Arias"
+        android:text="XAS125"
         android:textStyle="bold"
-        android:textSize="18sp"
+        android:textAllCaps="true"
+        android:textSize="24sp"
+        android:textColor="@color/colorAccent"
         />
 
     <TextView
-        android:id="@+id/txtPhone"
+        android:id="@+id/txtMarcaModelo"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        tools:text="300112222"
-        android:textSize="16sp"
+        android:text="Mazda, 2015"
+        android:textSize="20sp"
+        android:textColor="#000"
+        android:fontFamily="sans-serif-light"
        />
 
+
     <TextView
-        android:id="@+id/txtGroup"
+        android:id="@+id/txtTipo"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        tools:text="Familia"
-        android:textSize="16sp"
+        tools:text="Mecanico"
+        android:textColor="#000"
+        android:fontFamily="sans-serif-light"
+        android:textSize="20sp"
         />
+
+    <View
+        android:layout_marginTop="4dp"
+        android:layout_width="match_parent"
+        android:layout_height="0.2dp"
+        android:background="#b1b1b1"/>
 
 </LinearLayout>
