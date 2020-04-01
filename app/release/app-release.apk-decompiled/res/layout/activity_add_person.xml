@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="#fff1f1f1" android:padding="16.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/content" android:paddingBottom="100.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="20.0sp" android:textStyle="bold" android:textColor="@color/colorAccent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="30.0dip" android:text="Nombre" />
+        <EditText android:id="@id/edtName" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="nombre contacto" android:inputType="text" />
+        <TextView android:textSize="20.0sp" android:textStyle="bold" android:textColor="@color/colorAccent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="35.0dip" android:text="Teléfono" />
+        <EditText android:id="@id/edtPhone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="numero de telefono" android:inputType="phone" />
+        <TextView android:textSize="20.0sp" android:textStyle="bold" android:textColor="@color/colorAccent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="35.0dip" android:text="Grupo" />
+        <Spinner android:entries="@array/group" android:id="@id/spinner" android:paddingTop="4.0dip" android:paddingBottom="4.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <Button android:textSize="16.0sp" android:textStyle="bold" android:textColor="#ffffffff" android:id="@id/btnSave" android:background="@color/colorPrimary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="60.0dip" android:layout_marginBottom="30.0dip" android:text="Guardar" android:layout_below="@id/content" android:paddingStart="16.0dip" android:paddingEnd="16.0dip" android:layout_alignParentStart="true" android:layout_alignParentEnd="true" />
+    <Button android:textSize="16.0sp" android:textStyle="bold" android:textColor="#ffffffff" android:id="@id/btnCancel" android:background="@color/colorPrimary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="30.0dip" android:text="Volver" android:layout_below="@id/btnSave" android:paddingStart="16.0dip" android:paddingEnd="16.0dip" android:layout_alignParentStart="true" android:layout_alignParentEnd="true" />
+</RelativeLayout>

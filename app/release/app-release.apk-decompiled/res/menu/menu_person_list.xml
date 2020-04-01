@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:All4One="http://schemas.android.com/apk/res-auto">
+    <item android:icon="@drawable/ic_more" android:id="@id/mm" android:title="more" All4One:showAsAction="always">
+        <menu>
+            <item android:id="@id/ordenarNombre" android:title="Ordenar por Nombre" />
+            <item android:id="@id/ordenarGrupo" android:title="Ordenar por Grupo" />
+            <item android:id="@id/eliminar" android:title="Eliminar todos" />
+            <item android:id="@id/cambiar" android:title="Invertir la lista" />
+        </menu>
+    </item>
+</menu>
