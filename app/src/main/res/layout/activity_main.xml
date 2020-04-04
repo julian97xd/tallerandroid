@@ -24,7 +24,7 @@
         android:layout_gravity="bottom|center"
         android:layout_marginBottom="20dp"
         android:layout_marginEnd="16dp"
-        android:text="Agregar auto"
+        android:text="Agregar un equipo"
         android:textAllCaps="false"
 
         android:background="@color/colorPrimary"

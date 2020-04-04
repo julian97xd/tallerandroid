@@ -24,7 +24,7 @@
 
 
 # static fields
-.field static final EXTRA_CAR_EXTENDER:Ljava/lang/String; = "android.car.EXTENSIONS"
+.field static final EXTRA_CAR_EXTENDER:Ljava/lang/String; = "android.equipo.EXTENSIONS"
 
 .field private static final EXTRA_COLOR:Ljava/lang/String; = "app_color"
 
@@ -112,7 +112,7 @@
 
     move-result-object p1
 
-    const-string v1, "android.car.EXTENSIONS"
+    const-string v1, "android.equipo.EXTENSIONS"
 
     invoke-virtual {p1, v1}, Landroid/os/Bundle;->getBundle(Ljava/lang/String;)Landroid/os/Bundle;
 
@@ -604,7 +604,7 @@
 
     move-result-object v1
 
-    const-string v2, "android.car.EXTENSIONS"
+    const-string v2, "android.equipo.EXTENSIONS"
 
     invoke-virtual {v1, v2, v0}, Landroid/os/Bundle;->putBundle(Ljava/lang/String;Landroid/os/Bundle;)V
 

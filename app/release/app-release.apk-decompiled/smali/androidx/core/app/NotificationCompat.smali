@@ -742,7 +742,7 @@
     .line 5224
     iget-object p0, p0, Landroid/app/Notification;->extras:Landroid/os/Bundle;
 
-    const-string v1, "android.car.EXTENSIONS"
+    const-string v1, "android.equipo.EXTENSIONS"
 
     invoke-virtual {p0, v1}, Landroid/os/Bundle;->getBundle(Ljava/lang/String;)Landroid/os/Bundle;
 

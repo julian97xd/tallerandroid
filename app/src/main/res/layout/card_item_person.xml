@@ -9,10 +9,10 @@
    >
 
     <TextView
-        android:id="@+id/txtPlaca"
+        android:id="@+id/txtNombre"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="XAS125"
+        android:text="Junior (4)"
         android:textStyle="bold"
         android:textAllCaps="true"
         android:textSize="24sp"
@@ -20,10 +20,10 @@
         />
 
     <TextView
-        android:id="@+id/txtMarcaModelo"
+        android:id="@+id/txtCiudad"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Mazda, 2015"
+        android:text="Barranquilla"
         android:textSize="20sp"
         android:textColor="#000"
         android:fontFamily="sans-serif-light"
@@ -31,7 +31,7 @@
 
 
     <TextView
-        android:id="@+id/txtTipo"
+        android:id="@+id/txtDirector"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         tools:text="Mecanico"

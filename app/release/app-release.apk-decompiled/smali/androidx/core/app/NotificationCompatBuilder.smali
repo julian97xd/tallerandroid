@@ -643,7 +643,7 @@
 
     move-result-object v0
 
-    const-string v2, "android.car.EXTENSIONS"
+    const-string v2, "android.equipo.EXTENSIONS"
 
     invoke-virtual {v0, v2}, Landroid/os/Bundle;->getBundle(Ljava/lang/String;)Landroid/os/Bundle;
 

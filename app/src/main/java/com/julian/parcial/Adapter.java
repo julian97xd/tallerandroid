@@ -1,4 +1,4 @@
-package com.armando.parcial;
+package com.julian.parcial;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -10,9 +10,9 @@ import android.widget.TextView;
 
 import java.util.List;
 
-public class Adapter extends ArrayAdapter<Car> {
+public class Adapter extends ArrayAdapter<Equipo> {
 
-    public Adapter(Context context, List<Car> objects) {
+    public Adapter(Context context, List<Equipo> objects) {
         super(context, 0, objects);
     }
 
@@ -28,16 +28,16 @@ public class Adapter extends ArrayAdapter<Car> {
             convertView = inflater.inflate(R.layout.card_item_person, parent, false);
         }
 
-        TextView txtPlaca = convertView.findViewById(R.id.txtPlaca);
-        TextView txtMarcaModelo = convertView.findViewById(R.id.txtMarcaModelo);
-        TextView txTipo = convertView.findViewById(R.id.txtTipo);
+        TextView txtNombre = convertView.findViewById(R.id.txtNombre);
+        TextView txtCiudad = convertView.findViewById(R.id.txtCiudad);
+        TextView txtDirector = convertView.findViewById(R.id.txtDirector);
 
-        Car car = getItem(position);
+        Equipo equipo = getItem(position);
 
-        assert car != null;
-        txtPlaca.setText(car.getPlaca());
-        txtMarcaModelo.setText(car.getMarca()+", "+car.getModelo());
-        txTipo.setText(car.getTipo());
+        assert equipo != null;
+        txtNombre.setText(equipo.getNombre() + " ("+equipo.getCampeonatosWin()+")");
+        txtCiudad.setText(equipo.getCiudad());
+        txtDirector.setText(equipo.getDirector());
 
         return convertView;
     }

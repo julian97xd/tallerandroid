@@ -25,7 +25,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Añadir Auto"
+                android:text="Añadir Equipo"
                 android:fontFamily="sans-serif-black"
                 android:layout_gravity="center"
                 android:textSize="24sp"
@@ -35,82 +35,77 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Placa"
+                android:text="Nombre"
                 android:textSize="20sp"
                 android:textStyle="bold"
                 android:textColor="@color/colorAccent"
-                android:layout_marginTop="30dp"
+                android:layout_marginTop="14dp"
                 />
 
             <EditText
-                android:id="@+id/edtPlaca"
+                android:id="@+id/edtNombre"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="text"
-                android:hint="Ingrese la placa"/>
+                android:hint="Nombre equipo"/>
 
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Marca"
+                android:text="Director técnico"
                 android:textSize="20sp"
                 android:textColor="@color/colorAccent"
-                android:layout_marginTop="35dp"
+                android:layout_marginTop="10dp"
                 android:textStyle="bold"
                 />
 
             <EditText
-                android:id="@+id/edtMarca"
+                android:id="@+id/edtDirector"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="text"
-                android:hint="Ingrese la marca"/>
+                android:hint="Ingrese el nombre del director"/>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Modelo"
+                android:text="Departamento"
                 android:textSize="20sp"
                 android:layout_gravity="center"
                 android:textColor="@color/colorAccent"
-                android:layout_marginTop="35dp"
+                android:layout_marginTop="10dp"
                 android:textStyle="bold"
                 />
 
+            <Spinner
+                android:id="@+id/ciudad"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/ciudades"
+               />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Campeonatos ganados"
+                android:textSize="20sp"
+                android:layout_gravity="center"
+                android:textColor="@color/colorAccent"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"
+                />
+
+
             <NumberPicker
-                android:id="@+id/pickerAño"
+                android:id="@+id/pickerCampeonato"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:paddingBottom="4dp"
-                android:paddingTop="4dp"
+                android:paddingTop="8dp"
                 android:theme="@style/AppTheme.Picker"
                 android:layout_gravity="center"
                 />
-
-            <RadioGroup
-                android:id="@+id/opciones"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:layout_gravity="center"
-                android:layout_marginTop="30dp">
-
-                <RadioButton
-                    android:id="@+id/automatico"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Automatico"
-                    android:checked="true"
-                    android:layout_marginEnd="10dp"/>
-
-                <RadioButton
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Mecanico"
-                    android:layout_marginStart="10dp"/>
-
-            </RadioGroup>
 
         </LinearLayout>
 
